@@ -12,12 +12,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
 }
 
 h1 {
   font-family: "roboto", "sans serif";
   font-size: 22px;
+  margin-top: 39px;
+  margin-bottom: 60px;
 }
 
 form {
@@ -37,10 +38,15 @@ input, textarea {
 
 textarea {
   padding-top: 12px;
+  height: 188px;
 }
 
 input {
   height: 40px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
 }
 
 button {
