@@ -18,7 +18,10 @@ $.addEventListener("DOMContentLoaded", () => {
 
     console.log(data);
     try {
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://2928-89-90-186-203.ngrok.io",
+        data
+      );
       console.log(response);
     } catch (error) {
       console.log(error);
