@@ -4,7 +4,6 @@ body {
 
 .container {
   width: 500px;
-  height: 696px;
   margin: 110px auto;
   background: #E5E5E5;
   border-radius: 10px;
@@ -17,8 +16,9 @@ body {
 h1 {
   font-family: "roboto", "sans serif";
   font-size: 22px;
-  margin-top: 39px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #654ec0;
 }
 
 form {
@@ -32,7 +32,7 @@ input, textarea {
   border: 1px solid #C4C4C4;
   border-radius: 5px;
   padding-left: 14px;
-  font-family: roboto, sans-serif;
+  font-family: "roboto", "sans serif";
   font-size: 16px;
 }
 
@@ -52,10 +52,45 @@ input:focus, textarea:focus {
 button {
   height: 50px;
   margin-top: 20px;
+  margin-bottom: 30px;
   border-radius: 5px;
   background: #7359DC;
   color: #fff;
   border-style: none;
+  outline: none;
   font-family: roboto, sans-serif;
   font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0px 6px #999;
 }
+
+button:hover {
+  background-color: #5541a1;
+}
+
+button:active {
+  background-color: #5541a1;
+  box-shadow: 0 3px #706f6f, inset 0 0 15px #221b41;
+  transform: translateY(3px);
+}
+
+/* .confirmation {
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  color: #5541a1;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.confirmation .success {
+  position: absolute;
+  display: none;
+}
+
+.confirmation .fail {
+  position: absolute;
+  display: none;
+  color: red;
+} */

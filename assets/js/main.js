@@ -16,6 +16,11 @@ $.addEventListener("DOMContentLoaded", () => {
       message: $.querySelector("#message").value,
     };
 
+    const allInputs = $.querySelectorAll("input");
+    allInputs.forEach((singleInput) => (singleInput.value = ""));
+    let message = $.getElementById("message");
+    message.value = "";
+
     console.log(data);
     try {
       const response = await axios.post(
