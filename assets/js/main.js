@@ -25,7 +25,8 @@ $.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await axios.post(
         "https://6756-89-90-186-203.ngrok.io/form",
-        data
+        data,
+        { headers: { "ngrok-skip-browser-warning": "any" } }
       );
       console.log(response);
     } catch (error) {
