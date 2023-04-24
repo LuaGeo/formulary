@@ -24,12 +24,12 @@ $.addEventListener("DOMContentLoaded", () => {
     console.log(data);
     try {
       const response = await axios.post(
-        "https://88c6-193-252-55-178.ngrok.io/form",
+        "https://8b7f-89-90-186-203.ngrok.io/form",
         data
       );
       console.log(response);
     } catch (error) {
-      console.log(error);
+      console.log(error.response.data);
     }
   });
 });
