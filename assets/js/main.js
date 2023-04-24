@@ -24,7 +24,7 @@ $.addEventListener("DOMContentLoaded", () => {
     console.log(data);
     try {
       const response = await axios.post(
-        "https://8b7f-89-90-186-203.ngrok.io/form",
+        "https://6756-89-90-186-203.ngrok.io/form",
         data
       );
       console.log(response);
